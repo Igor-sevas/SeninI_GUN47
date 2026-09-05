@@ -6,4 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes: []
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: fb133adbbf120ea4cb7c19555d08abde, type: 3}
+    com.unity.input.settings: {fileID: 11400000, guid: 7fa4d579713b51c46b5dba60de8f25f8, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: b06601fab9f1a8a4fa10ffe8f83518a5, type: 3}
