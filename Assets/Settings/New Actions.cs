@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-namespace TankControll
+namespace TankControl
 {
     /// <summary>
     /// Provides programmatic access to <see cref="InputActionAsset" />, <see cref="InputActionMap" />, <see cref="InputAction" /> and <see cref="InputControlScheme" /> instances defined in asset "Assets/Settings/New Actions.inputactions".
@@ -74,7 +74,7 @@ namespace TankControll
     /// }
     /// </code>
     /// </example>
-    public partial class @TankControll: IInputActionCollection2, IDisposable
+    public partial class @TankControl: IInputActionCollection2, IDisposable
     {
         /// <summary>
         /// Provides access to the underlying asset instance.
@@ -84,7 +84,7 @@ namespace TankControll
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public @TankControll()
+        public @TankControl()
         {
             asset = InputActionAsset.FromJson(@"{
     ""version"": 1,
@@ -92,12 +92,12 @@ namespace TankControll
     ""maps"": [
         {
             ""name"": ""Tank"",
-            ""id"": ""28e66006-2631-45a2-921f-1a0b06348c36"",
+            ""id"": ""8a394a41-8c8a-4ca7-863d-f6250fdfaa5f"",
             ""actions"": [
                 {
-                    ""name"": ""HandBreak"",
+                    ""name"": ""Handbrake"",
                     ""type"": ""Button"",
-                    ""id"": ""ed65851b-f82d-4299-ad7c-e0d1e04bfa8c"",
+                    ""id"": ""7074b3bb-5cd9-43eb-bf9f-5681ef40c7a3"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -106,7 +106,7 @@ namespace TankControll
                 {
                     ""name"": ""Movement"",
                     ""type"": ""Value"",
-                    ""id"": ""9e132cb3-b828-43e1-81b3-e93ab2cd6fac"",
+                    ""id"": ""ca7c3fb8-1945-4f80-800c-1392a242aafa"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -116,18 +116,18 @@ namespace TankControll
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""a23488cb-29d3-49dc-82a7-872eb94a7d2d"",
+                    ""id"": ""4e63504b-1712-48b1-a1bb-f8e8c1318261"",
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""HandBreak"",
+                    ""action"": ""Handbrake"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""WASD"",
-                    ""id"": ""3c7b2aa1-3f3e-4799-8ae5-483587da2a28"",
+                    ""id"": ""b043b4b9-e8d7-4c64-961a-143824e2e71b"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -138,7 +138,7 @@ namespace TankControll
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""a848bd8e-a8b9-418f-9f27-3752ed912e28"",
+                    ""id"": ""810d0ce6-4626-4096-b961-aabd0ce5123a"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -149,7 +149,7 @@ namespace TankControll
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""6ff849d2-bf6f-4c13-9bee-8d441a56e0ae"",
+                    ""id"": ""bde19843-f295-4a65-a349-bcba9232add9"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -160,7 +160,7 @@ namespace TankControll
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""5e97b514-e49b-4ec3-ade6-916cc44b0ce2"",
+                    ""id"": ""81267b2b-2bdb-4f0a-a519-6a0b68026da9"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -171,7 +171,7 @@ namespace TankControll
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""ea2ec179-5f19-4e9e-afbf-107c71a3c3a9"",
+                    ""id"": ""f4e9d19e-142f-4033-b68f-e54c6ee7b2e2"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -184,12 +184,12 @@ namespace TankControll
         },
         {
             ""name"": ""Turret"",
-            ""id"": ""dddbdcdd-2637-4830-bc1c-01e679d677ff"",
+            ""id"": ""a1a0b3a2-6866-42b4-9e02-23d8175c180d"",
             ""actions"": [
                 {
                     ""name"": ""Fire"",
                     ""type"": ""Button"",
-                    ""id"": ""35c3e302-8b98-40fc-b96b-7d03edd24f88"",
+                    ""id"": ""6ff9c14d-82b0-40d6-960e-a418d2e394fe"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -198,8 +198,8 @@ namespace TankControll
                 {
                     ""name"": ""Focus"",
                     ""type"": ""Value"",
-                    ""id"": ""90780b3a-0e59-421c-acd2-a825c3f91d62"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""id"": ""d9bd3fdc-dfd9-4d51-8eac-8c80a21ec871"",
+                    ""expectedControlType"": ""Delta"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -208,7 +208,7 @@ namespace TankControll
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""afe020e8-ee57-4f5d-808f-b33049a1494d"",
+                    ""id"": ""2747747f-cf3d-46e0-9244-b223c623de46"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -219,7 +219,7 @@ namespace TankControll
                 },
                 {
                     ""name"": """",
-                    ""id"": ""fb774024-a9ca-4b6b-8fe4-a4fa5fd9c8b6"",
+                    ""id"": ""71460941-7f7a-4519-a60d-6b4bac55c0cd"",
                     ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -235,7 +235,7 @@ namespace TankControll
 }");
             // Tank
             m_Tank = asset.FindActionMap("Tank", throwIfNotFound: true);
-            m_Tank_HandBreak = m_Tank.FindAction("HandBreak", throwIfNotFound: true);
+            m_Tank_Handbrake = m_Tank.FindAction("Handbrake", throwIfNotFound: true);
             m_Tank_Movement = m_Tank.FindAction("Movement", throwIfNotFound: true);
             // Turret
             m_Turret = asset.FindActionMap("Turret", throwIfNotFound: true);
@@ -243,10 +243,10 @@ namespace TankControll
             m_Turret_Focus = m_Turret.FindAction("Focus", throwIfNotFound: true);
         }
 
-        ~@TankControll()
+        ~@TankControl()
         {
-            UnityEngine.Debug.Assert(!m_Tank.enabled, "This will cause a leak and performance issues, TankControll.Tank.Disable() has not been called.");
-            UnityEngine.Debug.Assert(!m_Turret.enabled, "This will cause a leak and performance issues, TankControll.Turret.Disable() has not been called.");
+            UnityEngine.Debug.Assert(!m_Tank.enabled, "This will cause a leak and performance issues, TankControl.Tank.Disable() has not been called.");
+            UnityEngine.Debug.Assert(!m_Turret.enabled, "This will cause a leak and performance issues, TankControl.Turret.Disable() has not been called.");
         }
 
         /// <summary>
@@ -322,23 +322,23 @@ namespace TankControll
         // Tank
         private readonly InputActionMap m_Tank;
         private List<ITankActions> m_TankActionsCallbackInterfaces = new List<ITankActions>();
-        private readonly InputAction m_Tank_HandBreak;
+        private readonly InputAction m_Tank_Handbrake;
         private readonly InputAction m_Tank_Movement;
         /// <summary>
         /// Provides access to input actions defined in input action map "Tank".
         /// </summary>
         public struct TankActions
         {
-            private @TankControll m_Wrapper;
+            private @TankControl m_Wrapper;
 
             /// <summary>
             /// Construct a new instance of the input action map wrapper class.
             /// </summary>
-            public TankActions(@TankControll wrapper) { m_Wrapper = wrapper; }
+            public TankActions(@TankControl wrapper) { m_Wrapper = wrapper; }
             /// <summary>
-            /// Provides access to the underlying input action "Tank/HandBreak".
+            /// Provides access to the underlying input action "Tank/Handbrake".
             /// </summary>
-            public InputAction @HandBreak => m_Wrapper.m_Tank_HandBreak;
+            public InputAction @Handbrake => m_Wrapper.m_Tank_Handbrake;
             /// <summary>
             /// Provides access to the underlying input action "Tank/Movement".
             /// </summary>
@@ -369,9 +369,9 @@ namespace TankControll
             {
                 if (instance == null || m_Wrapper.m_TankActionsCallbackInterfaces.Contains(instance)) return;
                 m_Wrapper.m_TankActionsCallbackInterfaces.Add(instance);
-                @HandBreak.started += instance.OnHandBreak;
-                @HandBreak.performed += instance.OnHandBreak;
-                @HandBreak.canceled += instance.OnHandBreak;
+                @Handbrake.started += instance.OnHandbrake;
+                @Handbrake.performed += instance.OnHandbrake;
+                @Handbrake.canceled += instance.OnHandbrake;
                 @Movement.started += instance.OnMovement;
                 @Movement.performed += instance.OnMovement;
                 @Movement.canceled += instance.OnMovement;
@@ -386,9 +386,9 @@ namespace TankControll
             /// <seealso cref="TankActions" />
             private void UnregisterCallbacks(ITankActions instance)
             {
-                @HandBreak.started -= instance.OnHandBreak;
-                @HandBreak.performed -= instance.OnHandBreak;
-                @HandBreak.canceled -= instance.OnHandBreak;
+                @Handbrake.started -= instance.OnHandbrake;
+                @Handbrake.performed -= instance.OnHandbrake;
+                @Handbrake.canceled -= instance.OnHandbrake;
                 @Movement.started -= instance.OnMovement;
                 @Movement.performed -= instance.OnMovement;
                 @Movement.canceled -= instance.OnMovement;
@@ -436,12 +436,12 @@ namespace TankControll
         /// </summary>
         public struct TurretActions
         {
-            private @TankControll m_Wrapper;
+            private @TankControl m_Wrapper;
 
             /// <summary>
             /// Construct a new instance of the input action map wrapper class.
             /// </summary>
-            public TurretActions(@TankControll wrapper) { m_Wrapper = wrapper; }
+            public TurretActions(@TankControl wrapper) { m_Wrapper = wrapper; }
             /// <summary>
             /// Provides access to the underlying input action "Turret/Fire".
             /// </summary>
@@ -540,12 +540,12 @@ namespace TankControll
         public interface ITankActions
         {
             /// <summary>
-            /// Method invoked when associated input action "HandBreak" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Handbrake" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnHandBreak(InputAction.CallbackContext context);
+            void OnHandbrake(InputAction.CallbackContext context);
             /// <summary>
             /// Method invoked when associated input action "Movement" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
