@@ -209,7 +209,7 @@ namespace TankControl
                 {
                     ""name"": """",
                     ""id"": ""2747747f-cf3d-46e0-9244-b223c623de46"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
