@@ -601,8 +601,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gunAxis: {fileID: 2478274101297001232}
   _gunAngleLimit:
-    Min: 25
-    Max: -25
+    Min: -25
+    Max: 25
   _horRotateSpeed: 3
   _vertRotateSpeed: 0.1
   <FirePoint>k__BackingField: {fileID: 4730126619728813368}
