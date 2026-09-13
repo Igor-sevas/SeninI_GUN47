@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 952126390143243886}
   - component: {fileID: 57978711324740807}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: redCoube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 6193490528345274653}
   - component: {fileID: 4132038194299277675}
   - component: {fileID: 2492506830177672610}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: redCoube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 4103124870309120549}
   - component: {fileID: 2665907046036507444}
   - component: {fileID: 4038255759205614420}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: redCoube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 3436378103356123434}
   - component: {fileID: 1175570560760360642}
   - component: {fileID: 4387261678114189811}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: redCoube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -475,7 +475,7 @@ GameObject:
   - component: {fileID: 7574505589164572379}
   - component: {fileID: 7432395491414927016}
   - component: {fileID: 786839304364372679}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: redCoube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
